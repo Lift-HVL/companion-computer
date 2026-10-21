@@ -1,0 +1,31 @@
+#imports
+
+#Initialize classes
+
+
+"""Send FSM/autonomy/detection state as NAMED_VALUE_FLOAT so the ground dashboard sees it."""
+
+
+
+#RECIEVER(GROUND STATION AKA LAPTOP)
+"""GROUND_E = ("158.37.228.121", 5005)
+    GROUND_K = ("192.168.1.30", 5005)
+    GROUND_D = ("192.168.1.185", 5005)
+    
+    """
+
+#sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+
+ # 1 - Set up MAVLink connection (lager connection)
+
+ # 2 - Shared live vehicle state (lager en instans av vehicle)
+
+ # 3 - Command interface to autopilot 
+
+ # 4 - FSM controller 
+
+ # 5 - Event generator
+
+ 
+
