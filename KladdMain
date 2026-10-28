@@ -1,18 +1,30 @@
 #imports
+from mavlink.vehicle_state import VehicleState
 
 #Initialize classes
-
+vehicle = VehicleState()
 
 """Send FSM/autonomy/detection state as NAMED_VALUE_FLOAT so the ground dashboard sees it."""
 
+print("Før ARM:")
+print(vehicle)
 
+print("\nSender ARM-kommando...")
+#legg til commands.arm()
+
+print("\nSimulerer at ArduPilot godkjente kommadnoen...")
+vehicle.connected = True
+vehicle.armed = True
+vehicle.mode = "GUIDED"
+
+print("\nEtter ARM:")
+print(vehicle)
 
 #RECIEVER(GROUND STATION AKA LAPTOP)
 """GROUND_E = ("158.37.228.121", 5005)
     GROUND_K = ("192.168.1.30", 5005)
     GROUND_D = ("192.168.1.185", 5005)
-    
-    """
+"""
 
 #sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
