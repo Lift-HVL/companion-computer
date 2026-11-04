@@ -6,6 +6,7 @@ class State(Enum):
     ARMED = auto()                  # Drone is armed and ready to take off   
     TAKEOFF = auto()                # Drone is taking off
     HOVER = auto()                  # Drone is hovering in place
+    MANUAL = auto()
     SEARCH = auto()
     TRACK = auto()
     FAILSAFE = auto()               # Drone is in failsafe mode due to an error or loss of signal
